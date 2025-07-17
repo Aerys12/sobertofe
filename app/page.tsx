@@ -1,103 +1,381 @@
-import Image from "next/image";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+export default function HomePage() {
+	return (
+		<div className='min-h-screen bg-white'>
+			<section className='py-16'>
+				<div className='container mx-auto px-4'>
+					<div className='flex flex-col justify-center content-center'>
+						<div className='w-full flex justify-center '>
+							<h1 className='scroll-m-20 text-center text-4xl md:text-6xl font-extrabold tracking-tight text-balance'>
+								Sober In Toronto
+							</h1>
+						</div>
+						<div className='w-full flex justify-center'>
+							<p className='text-center text-muted-foreground text-xl mt-4'>
+								A weekly newsletter for Toronto's sober community navigating the
+								reality of early recovery—because you're not broken, you're
+								healing
+							</p>
+						</div>
+						<div className='w-full flex justify-center content-center'>
+							<ul className='my-6 ml-6 [&>li]:mt-2'>
+								<li className='flex items-start'>
+									<span className='mr-2'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='24'
+											height='24'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											stroke-linejoin='round'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+										>
+											<path d='M20 6 9 17l-5-5' />
+										</svg>
+									</span>
+									Real recovery stories from Toronto locals at every stage (30
+									days to 2+ years)
+								</li>
+								<li className='flex items-start'>
+									<span className='mr-2'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='24'
+											height='24'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											stroke-linejoin='round'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+										>
+											<path d='M20 6 9 17l-5-5' />
+										</svg>
+									</span>
+									Science-backed insights on dopamine healing and anhedonia
+									recovery
+								</li>
+								<li className='flex items-start'>
+									<span className='mr-2'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='24'
+											height='24'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											stroke-linejoin='round'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+										>
+											<path d='M20 6 9 17l-5-5' />
+										</svg>
+									</span>
+									Sober social events and connection opportunities across the
+									GTA
+								</li>
+								<li className='flex items-start'>
+									<span className='mr-2'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='24'
+											height='24'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											stroke-linejoin='round'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+										>
+											<path d='M20 6 9 17l-5-5' />
+										</svg>
+									</span>
+									Identity reconstruction tools that actually work
+								</li>
+								<li className='flex items-start'>
+									<span className='mr-2'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='24'
+											height='24'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											stroke-linejoin='round'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+										>
+											<path d='M20 6 9 17l-5-5' />
+										</svg>
+									</span>
+									No toxic positivity. Just honest, practical guidance
+								</li>
+							</ul>
+						</div>
+						<div className='flex justify-center content-center'>
+							<iframe
+								src='https://generalistbits.substack.com/embed'
+								className='w-full md:w-1/2'
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className='py-16 bg-accent'>
+				<div className='container mx-auto px-4'>
+					<h1 className='mb-12 scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance'>
+						Does This Sound Familiar?
+					</h1>
+					<div className='grid grid-cols-1 gap-6'>
+						<Card className='border-l-4 border-l-destructive'>
+							<CardHeader>
+								<CardTitle className='text-destructive scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									You feel like a completely different person
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									Quitting alcohol feels like losing 70% of yourself. You're
+									mourning the person you were when drinking, and you don't
+									recognize who you are without it. The identity you built
+									around alcohol is gone, and you're left feeling hollow.
+								</CardDescription>
+							</CardHeader>
+							<CardContent>
+								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
+									"I feel like a completely different person... Before I drank I
+									had joy... But it's all gone."
+								</blockquote>
+							</CardContent>
+						</Card>
+						<Card className='border-l-4 border-l-destructive'>
+							<CardHeader>
+								<CardTitle className='text-destructive scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									Your brain feels like "Grey Static"
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									You wake up each day and nothing feels rewarding anymore.
+									Activities that used to bring joy now feel flat and empty.
+									You're not seeking happiness—you're just seeking health and
+									sanity.
+								</CardDescription>
+							</CardHeader>
+							<CardContent>
+								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
+									"My whole brain was just grey static. I slept 16 hours a day
+									for about 6 months."
+								</blockquote>
+							</CardContent>
+						</Card>
+						<Card className='border-l-4 border-l-destructive'>
+							<CardHeader>
+								<CardTitle className='text-destructive scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									Social life feels impossible
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									You miss those tipsy deep talks with friends, moments that
+									felt romantic and therapeutic. Now you don't feel the need to
+									go out and talk to people. The social rituals that once
+									brought connection are gone, and you're struggling to find
+									replacements.
+								</CardDescription>
+							</CardHeader>
+							<CardContent>
+								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
+									"Those nights with friends at home or in a cozy bar... almost
+									had something romantic and therapeutic... that sweet little
+									escape... won't be the table I sit at anymore."
+								</blockquote>
+							</CardContent>
+						</Card>
+						<Card className='mt-4'>
+							<CardHeader>
+								<CardTitle className='text-center scroll-m-20 pb-2 text-2xl font-semibold tracking-tight '>
+									Here's What Nobody Tells You
+								</CardTitle>
+								<CardDescription className='text-lg'>
+									This isn't a willpower problem. This isn't about "just
+									thinking positive." Your brain is literally rewiring itself,
+									and the anhedonia, identity loss, and social struggles are
+									normal parts of neurochemical recovery. You need a community
+									that understands the science AND the struggle.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+					</div>
+				</div>
+			</section>
+			<section className='py-16 bg-white'>
+				<div className='container mx-auto px-4'>
+					<h1 className='mb-12 scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance'>
+						Imagine This Instead...
+					</h1>
+					<div className='grid grid-cols-1 gap-6'>
+						<Card className='border-l-4 border-l-primary'>
+							<CardHeader>
+								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									Your brain starts to light up again
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									You understand why you felt like "grey static" and you have
+									practical tools to help your dopamine system heal. Small
+									pleasures start returning, a good coffee, a sunset, a friend's
+									laugh. You're not just surviving early recovery, you're
+									actively participating in your healing.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+						<Card className='border-l-4 border-l-primary'>
+							<CardHeader>
+								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									You rebuild your identity with intention
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									Instead of mourning who you were, you're excited about who
+									you're becoming. You have a clear process for identity
+									reconstruction that doesn't rely on toxic positivity. You're
+									both the marble and the sculptor, and you finally have the
+									tools
+								</CardDescription>
+							</CardHeader>
+						</Card>
+						<Card className='border-l-4 border-l-primary'>
+							<CardHeader>
+								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									You create new meaningful rituals
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									You've found your tribe in Toronto. You have sober social
+									events to attend, vulnerability-based connections to nurture,
+									and new rituals that feel as meaningful as those tipsy deep
+									talks once did. You're building a life you love.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+						<Card>
+							<CardHeader>
+								<CardTitle className='text-center scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+									The New Way Forward
+								</CardTitle>
+								<CardDescription className='text-black text-lg'>
+									Recovery isn't about white-knuckling through anhedonia alone.
+									It's about understanding the science, connecting with others
+									who get it, and having practical tools for rebuilding your
+									identity and social life. It's about community-based healing
+									that honors both the struggle and the science.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+					</div>
+				</div>
+			</section>
+			<section className='py-16 bg-accent'>
+				<div className='container mx-auto px-4'>
+					<div className='w-full flex justify-center '>
+						<h1 className='scroll-m-20 text-center text-4xl md:text-6xl font-extrabold tracking-tight text-balance'>
+							Introducing "Sober In Toronto"
+						</h1>
+					</div>
+					<div className='w-full flex justify-center mb-6'>
+						<p className='text-center text-muted-foreground text-xl mt-4'>
+							Toronto's first science-based recovery newsletter that combines
+							honest storytelling with practical neurochemical education and
+							real local community connections.
+						</p>
+					</div>
+					<div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-center'>
+						<Card className='bg-slate-50'>
+							<CardHeader className=''>
+								<div className=' flex mx-auto mb-4 content-center justify-center font-bold'>
+									<h1 className='text-center text-2xl'>1.</h1>
+								</div>
+								<CardTitle>Get the Real Story</CardTitle>
+								<CardDescription>
+									Every Wednesday, receive stage-specific recovery stories from
+									Toronto locals, plus the latest research on dopamine healing
+									and anhedonia recovery.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+						<Card className='bg-slate-50'>
+							<CardHeader>
+								<div className=' flex mx-auto mb-4 content-center justify-center font-bold'>
+									<h1 className='text-center text-2xl'>2.</h1>
+								</div>
+								<CardTitle>Apply the Tools</CardTitle>
+								<CardDescription>
+									Use our identity reconstruction exercises, social experiment
+									challenges, and vulnerability-based connection prompts
+									throughout your week.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+						<Card className='bg-slate-50'>
+							<CardHeader>
+								<div className=' flex mx-auto mb-4 content-center justify-center font-bold'>
+									<h1 className='text-center text-2xl'>3.</h1>
+								</div>
+								<CardTitle>Connect Locally</CardTitle>
+								<CardDescription>
+									Join exclusive Toronto sober events, meetups, and community
+									challenges designed specifically for people navigating early
+									recovery.
+								</CardDescription>
+							</CardHeader>
+						</Card>
+					</div>
+					<div className='text-center mt-8'>
+						<Card>
+							<CardHeader>
+								<CardTitle className='text-2xl'>
+									A message from the Rona
+								</CardTitle>
+								<CardContent className='text-lg tracking-tight'>
+									"I started this newsletter because I was tired of the 'pink
+									cloud' recovery content that ignored the grey static phase.
+									After 1.5+ years sober in Toronto, I know recovery needs both
+									science and community. This newsletter is for people who want
+									the real story. The struggles, the breakthroughs, and the
+									practical tools that actually work for rebuilding your life."
+								</CardContent>
+							</CardHeader>
+						</Card>
+					</div>
+				</div>
+			</section>
+			<section className='py-16 bg-white'>
+				<div className='container mx-auto px-4'>
+					<div className='flex flex-col justify-center content-center'>
+						<h1 className='scroll-m-20 text-center text-4xl md:text-6xl font-extrabold tracking-tight text-balance'>
+							Ready to Move Beyong the Grey Static?
+						</h1>
+					</div>
+					<div className='w-full flex justify-center'>
+						<p className='text-center text-muted-foreground text-xl mt-4'>
+							Join Toronto locals who receive honest, practical recovery
+							guidance every Wednesday.
+						</p>
+					</div>
+				</div>
+				<div className='flex justify-center content-center mt-8'>
+					<iframe
+						src='https://generalistbits.substack.com/embed'
+						className='w-full md:w-1/2'
+					></iframe>
+				</div>
+			</section>
+		</div>
+	);
 }
