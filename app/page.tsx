@@ -5,14 +5,16 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
+import logo from "../public/logo.png";
 export default function HomePage() {
 	return (
 		<div className='min-h-screen bg-white'>
 			<section className='py-16'>
 				<div className='container mx-auto px-4'>
 					<div className='flex flex-col justify-center content-center'>
-						<div className='w-full flex justify-center '>
+						<div className='w-full flex justify-center content-center '>
 							<h1 className='scroll-m-20 text-center text-4xl md:text-6xl font-extrabold tracking-tight text-balance'>
 								Sober In Toronto
 							</h1>
@@ -38,7 +40,7 @@ export default function HomePage() {
 											strokeWidth='2'
 											strokeLinecap='round'
 											strokeLinejoin='round'
-											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-brand'
 										>
 											<path d='M20 6 9 17l-5-5' />
 										</svg>
@@ -58,7 +60,7 @@ export default function HomePage() {
 											strokeWidth='2'
 											strokeLinecap='round'
 											strokeLinejoin='round'
-											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-brand'
 										>
 											<path d='M20 6 9 17l-5-5' />
 										</svg>
@@ -78,7 +80,7 @@ export default function HomePage() {
 											strokeWidth='2'
 											strokeLinecap='round'
 											strokeLinejoin='round'
-											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-brand'
 										>
 											<path d='M20 6 9 17l-5-5' />
 										</svg>
@@ -98,7 +100,7 @@ export default function HomePage() {
 											strokeWidth='2'
 											strokeLinecap='round'
 											strokeLinejoin='round'
-											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-brand'
 										>
 											<path d='M20 6 9 17l-5-5' />
 										</svg>
@@ -117,7 +119,7 @@ export default function HomePage() {
 											strokeWidth='2'
 											strokeLinecap='round'
 											strokeLinejoin='round'
-											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
+											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-brand'
 										>
 											<path d='M20 6 9 17l-5-5' />
 										</svg>
@@ -128,7 +130,7 @@ export default function HomePage() {
 						</div>
 						<div className='flex justify-center content-center'>
 							<iframe
-								src='https://generalistbits.substack.com/embed'
+								src='https://soberintoronto.substack.com/embed'
 								className='w-full md:w-1/2'
 							></iframe>
 						</div>
@@ -225,9 +227,9 @@ export default function HomePage() {
 						Imagine This Instead...
 					</h1>
 					<div className='grid grid-cols-1 gap-6'>
-						<Card className='border-l-4 border-l-primary'>
+						<Card className='border-l-4 border-l-brand'>
 							<CardHeader>
-								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+								<CardTitle className='text-brand scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
 									Your brain starts to light up again
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
@@ -239,9 +241,9 @@ export default function HomePage() {
 								</CardDescription>
 							</CardHeader>
 						</Card>
-						<Card className='border-l-4 border-l-primary'>
+						<Card className='border-l-4 border-l-brand'>
 							<CardHeader>
-								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+								<CardTitle className='text-brand scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
 									You rebuild your identity with intention
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
@@ -253,9 +255,9 @@ export default function HomePage() {
 								</CardDescription>
 							</CardHeader>
 						</Card>
-						<Card className='border-l-4 border-l-primary'>
+						<Card className='border-l-4 border-l-brand'>
 							<CardHeader>
-								<CardTitle className='text-primary scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+								<CardTitle className='text-brand scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
 									You create new meaningful rituals
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
@@ -375,7 +377,7 @@ export default function HomePage() {
 				</div>
 				<div className='flex justify-center content-center mt-8'>
 					<iframe
-						src='https://generalistbits.substack.com/embed'
+						src='https://soberintoronto.substack.com/embed'
 						className='w-full md:w-1/2'
 					></iframe>
 				</div>
