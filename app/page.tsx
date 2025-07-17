@@ -19,8 +19,8 @@ export default function HomePage() {
 						</div>
 						<div className='w-full flex justify-center'>
 							<p className='text-center text-muted-foreground text-xl mt-4'>
-								A weekly newsletter for Toronto's sober community navigating the
-								reality of early recovery—because you're not broken, you're
+								A weekly newsletter for Toronto&apos;s sober community navigating the
+								reality of early recovery—because you're not broken, you&apos;re
 								healing
 							</p>
 						</div>
@@ -37,7 +37,7 @@ export default function HomePage() {
 											stroke='currentColor'
 											strokeWidth='2'
 											strokeLinecap='round'
-											stroke-linejoin='round'
+											strokeLinejoin='round'
 											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
 										>
 											<path d='M20 6 9 17l-5-5' />
@@ -57,7 +57,7 @@ export default function HomePage() {
 											stroke='currentColor'
 											strokeWidth='2'
 											strokeLinecap='round'
-											stroke-linejoin='round'
+											strokeLinejoin='round'
 											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
 										>
 											<path d='M20 6 9 17l-5-5' />
@@ -77,7 +77,7 @@ export default function HomePage() {
 											stroke='currentColor'
 											strokeWidth='2'
 											strokeLinecap='round'
-											stroke-linejoin='round'
+											strokeLinejoin='round'
 											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
 										>
 											<path d='M20 6 9 17l-5-5' />
@@ -97,7 +97,7 @@ export default function HomePage() {
 											stroke='currentColor'
 											strokeWidth='2'
 											strokeLinecap='round'
-											stroke-linejoin='round'
+											strokeLinejoin='round'
 											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
 										>
 											<path d='M20 6 9 17l-5-5' />
@@ -116,7 +116,7 @@ export default function HomePage() {
 											stroke='currentColor'
 											strokeWidth='2'
 											strokeLinecap='round'
-											stroke-linejoin='round'
+											strokeLinejoin='round'
 											className='lucide lucide-check-icon lucide-check mt-0.5 h-5 w-5 flex-shrink-0 text-primary'
 										>
 											<path d='M20 6 9 17l-5-5' />
@@ -147,35 +147,35 @@ export default function HomePage() {
 									You feel like a completely different person
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
-									Quitting alcohol feels like losing 70% of yourself. You're
-									mourning the person you were when drinking, and you don't
+									Quitting alcohol feels like losing 70% of yourself. You&apos;re
+									mourning the person you were when drinking, and you don&apos;t
 									recognize who you are without it. The identity you built
-									around alcohol is gone, and you're left feeling hollow.
+									around alcohol is gone, and you&apos;re left feeling hollow.
 								</CardDescription>
 							</CardHeader>
 							<CardContent>
 								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
-									"I feel like a completely different person... Before I drank I
-									had joy... But it's all gone."
+								&ldquo;I feel like a completely different person... Before I drank I
+									had joy... But it&apos;s all gone.&rdquo;
 								</blockquote>
 							</CardContent>
 						</Card>
 						<Card className='border-l-4 border-l-destructive'>
 							<CardHeader>
 								<CardTitle className='text-destructive scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
-									Your brain feels like "Grey Static"
+									Your brain feels like &ldquo;Grey Static&rdquo;
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
 									You wake up each day and nothing feels rewarding anymore.
 									Activities that used to bring joy now feel flat and empty.
-									You're not seeking happiness—you're just seeking health and
+									You&apos;re not seeking happiness—you&apos;re just seeking health and
 									sanity.
 								</CardDescription>
 							</CardHeader>
 							<CardContent>
 								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
-									"My whole brain was just grey static. I slept 16 hours a day
-									for about 6 months."
+								&ldquo;My whole brain was just grey static. I slept 16 hours a day
+									for about 6 months.&rdquo;
 								</blockquote>
 							</CardContent>
 						</Card>
@@ -186,9 +186,9 @@ export default function HomePage() {
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
 									You miss those tipsy deep talks with friends, moments that
-									felt romantic and therapeutic. Now you don't feel the need to
+									felt romantic and therapeutic. Now you don&apos;t feel the need to
 									go out and talk to people. The social rituals that once
-									brought connection are gone, and you're struggling to find
+									brought connection are gone, and you&apos;re struggling to find
 									replacements.
 								</CardDescription>
 							</CardHeader>
@@ -196,18 +196,18 @@ export default function HomePage() {
 								<blockquote className='text-lg text-muted-foreground border-l-2 pl-6 italic'>
 									"Those nights with friends at home or in a cozy bar... almost
 									had something romantic and therapeutic... that sweet little
-									escape... won't be the table I sit at anymore."
+									escape... won&apos;t be the table I sit at anymore.&rdquo;
 								</blockquote>
 							</CardContent>
 						</Card>
 						<Card className='mt-4'>
 							<CardHeader>
 								<CardTitle className='text-center scroll-m-20 pb-2 text-2xl font-semibold tracking-tight '>
-									Here's What Nobody Tells You
+									Here&apos;s What Nobody Tells You
 								</CardTitle>
 								<CardDescription className='text-lg'>
-									This isn't a willpower problem. This isn't about "just
-									thinking positive." Your brain is literally rewiring itself,
+									This isn&apos;t a willpower problem. This isn&apos;t about &ldquo;just
+									thinking positive.&rdquo; Your brain is literally rewiring itself,
 									and the anhedonia, identity loss, and social struggles are
 									normal parts of neurochemical recovery. You need a community
 									that understands the science AND the struggle.
@@ -229,10 +229,10 @@ export default function HomePage() {
 									Your brain starts to light up again
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
-									You understand why you felt like "grey static" and you have
+									You understand why you felt like &ldquo;grey static&rdquo; and you have
 									practical tools to help your dopamine system heal. Small
-									pleasures start returning, a good coffee, a sunset, a friend's
-									laugh. You're not just surviving early recovery, you're
+									pleasures start returning, a good coffee, a sunset, a friend&apos;s
+									laugh. You&apos;re not just surviving early recovery, you&apos;re
 									actively participating in your healing.
 								</CardDescription>
 							</CardHeader>
@@ -243,9 +243,9 @@ export default function HomePage() {
 									You rebuild your identity with intention
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
-									Instead of mourning who you were, you're excited about who
-									you're becoming. You have a clear process for identity
-									reconstruction that doesn't rely on toxic positivity. You're
+									Instead of mourning who you were, you&apos;re excited about who
+									you&apos;re becoming. You have a clear process for identity
+									reconstruction that doesn&apos;t rely on toxic positivity. You&apos;re
 									both the marble and the sculptor, and you finally have the
 									tools
 								</CardDescription>
@@ -257,10 +257,10 @@ export default function HomePage() {
 									You create new meaningful rituals
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
-									You've found your tribe in Toronto. You have sober social
+									You&apos;ve found your tribe in Toronto. You have sober social
 									events to attend, vulnerability-based connections to nurture,
 									and new rituals that feel as meaningful as those tipsy deep
-									talks once did. You're building a life you love.
+									talks once did. You&apos;re building a life you love.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -270,10 +270,10 @@ export default function HomePage() {
 									The New Way Forward
 								</CardTitle>
 								<CardDescription className='text-black text-lg'>
-									Recovery isn't about white-knuckling through anhedonia alone.
-									It's about understanding the science, connecting with others
+									Recovery isn&apos;t about white-knuckling through anhedonia alone.
+									It&apos;s about understanding the science, connecting with others
 									who get it, and having practical tools for rebuilding your
-									identity and social life. It's about community-based healing
+									identity and social life. It&apos;s about community-based healing
 									that honors both the struggle and the science.
 								</CardDescription>
 							</CardHeader>
@@ -285,7 +285,7 @@ export default function HomePage() {
 				<div className='container mx-auto px-4'>
 					<div className='w-full flex justify-center '>
 						<h1 className='scroll-m-20 text-center text-4xl md:text-6xl font-extrabold tracking-tight text-balance'>
-							Introducing "Sober In Toronto"
+							Introducing &ldquo;Sober In Toronto"
 						</h1>
 					</div>
 					<div className='w-full flex justify-center mb-6'>
@@ -343,12 +343,12 @@ export default function HomePage() {
 									A message from the Rona
 								</CardTitle>
 								<CardContent className='text-lg tracking-tight'>
-									"I started this newsletter because I was tired of the 'pink
-									cloud' recovery content that ignored the grey static phase.
+								&ldquo;I started this newsletter because I was tired of the &apos;pink
+									cloud&apos; recovery content that ignored the grey static phase.
 									After 1.5+ years sober in Toronto, I know recovery needs both
 									science and community. This newsletter is for people who want
 									the real story. The struggles, the breakthroughs, and the
-									practical tools that actually work for rebuilding your life."
+									practical tools that actually work for rebuilding your life.&rdquo;
 								</CardContent>
 							</CardHeader>
 						</Card>
