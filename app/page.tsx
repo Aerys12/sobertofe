@@ -341,15 +341,13 @@ export default function HomePage() {
 					<div className='text-center mt-8'>
 						<Card>
 							<CardHeader>
-								<CardTitle className='text-2xl'>
-									A message from the Rona
-								</CardTitle>
+								<CardTitle className='text-2xl'>A message from Rona</CardTitle>
 								<CardContent className='text-lg tracking-tight'>
 									&ldquo;I started this newsletter because I was tired of the
 									&apos;pink cloud&apos; recovery content that ignored the grey
 									static phase. After 1.5+ years sober in Toronto, I know
 									recovery needs both science and community. This newsletter is
-									for people who want the real story. The struggles, the
+									for people who want the real story,the struggles, the
 									breakthroughs, and the practical tools that actually work for
 									rebuilding your life.&rdquo;
 								</CardContent>
