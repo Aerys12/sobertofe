@@ -5,9 +5,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
-
-import logo from "../public/logo.png";
 export default function HomePage() {
 	return (
 		<div className='min-h-screen bg-white'>
